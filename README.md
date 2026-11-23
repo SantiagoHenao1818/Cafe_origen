@@ -25,6 +25,32 @@ Repositorio desarrollado como parte de las prácticas y miniretos de **Algoritmi
 
 ---
 
+# Café Origen — Motor de Analítica (v0.1)
+
+Proyecto desarrollado para **Café Origen** (tostadora de café de especialidad en Medellín) por el equipo de **Nodo Digital**. Procesa el historial de ventas desde consola con Node.js para responder preguntas clave de negocio sin depender de hojas de cálculo manuales.
+
+## Preguntas de negocio que responde
+- ¿Cuánto dinero se ha vendido en total y cuántas unidades han salido?
+- ¿Cuál fue la venta individual de mayor valor y cuál es el ticket promedio de compras válidas?
+- ¿Cuánto se vende por ciudad (unificando variaciones de mayúsculas, minúsculas y espacios)?
+- ¿Cuántas unidades se venden por producto y cuáles son los 3 productos que más dinero generan?
+- ¿Cómo se comporta un día con ventas frente a un día sin ventas?
+
+## Cómo ejecutar el proyecto
+Asegúrate de tener **Node.js (LTS)** instalado y estar en la raíz del repositorio `cafe-origen-analitica`:
+
+```bash
+# 1. Explorar los datos y detectar anomalías/casos borde
+node src/explorar.js
+
+# 2. Verificar que las funciones con ciclos y con métodos den exactamente lo mismo ("OK")
+node src/verificar.js
+
+# 3. Generar el reporte ejecutivo por consola (v0.1)
+node src/reporte.js
+
+
+
 ## 📂 Estructura del Proyecto
 ```text
 cafe_origen/
