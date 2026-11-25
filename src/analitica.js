@@ -58,7 +58,7 @@ function ticketPromedio(ventas) {
   for (const venta of ventas) {
     if (venta.cantidad > 0) {
       totalDinero += valorVenta(venta);
-      ventasValidas += 1;
+      ventasValidas += 1; 
     }
   }
 
@@ -101,7 +101,7 @@ function totalVendidoM(ventas) {
 
 function unidadesVendidasM(ventas) {
   if (!ventas || ventas.length === 0) {
-    return 0;
+    return 0;   
   }
 
   return ventas.reduce((acc, venta) => acc + venta.cantidad, 0);

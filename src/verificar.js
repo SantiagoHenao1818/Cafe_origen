@@ -1,4 +1,4 @@
-const ventas = require("../src/Datos.js");
+const ventas = require("./Datos.js");
 const {
   totalVendido,
   unidadesVendidas,

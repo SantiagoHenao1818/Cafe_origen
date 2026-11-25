@@ -12,9 +12,9 @@ Repositorio desarrollado como parte de las prácticas y miniretos de **Algoritmi
   * Procesamiento y conteo de 12 registros de ventas.
   * Detección de inconsistencias de formato en ciudades (variaciones de mayúsculas/minúsculas y espacios invisibles al final) mediante técnicas de mapeo en consola con delimitadores (`[]`).
   * Identificación de anomalías numéricas (cantidades en 0).
-  * Documentación de hallazgos, decisiones técnicas y diccionario de datos en la bitácora (`bitacora.md`).
+  * Documentación de hallazgos, decisiones técnicas y diccionario de datos en la bitácora (`bitacora-dia1.md`).
 
-*(Próximamente se agregarán las siguientes fases de desarrollo y filtrado de datos).*
+*(Las fases de análisis, filtrado y reporte continúan en la sección "Motor de Analítica (v0.1)" más abajo).*
 
 ---
 
@@ -37,7 +37,7 @@ Proyecto desarrollado para **Café Origen** (tostadora de café de especialidad 
 - ¿Cómo se comporta un día con ventas frente a un día sin ventas?
 
 ## Cómo ejecutar el proyecto
-Asegúrate de tener **Node.js (LTS)** instalado y estar en la raíz del repositorio `cafe-origen-analitica`:
+Asegúrate de tener **Node.js (LTS)** instalado y estar en la raíz del repositorio `Cafe_origen`:
 
 ```bash
 # 1. Explorar los datos y detectar anomalías/casos borde
@@ -48,16 +48,19 @@ node src/verificar.js
 
 # 3. Generar el reporte ejecutivo por consola (v0.1)
 node src/reporte.js
-
-
+```
 
 ## 📂 Estructura del Proyecto
 ```text
-cafe_origen/
+Cafe_origen/
 │
 ├── src/
-│   ├── datos.js        # Arreglo con los registros de ventas
-│   └── explorar.js     # Script principal de auditoría y validación
+│   ├── Datos.js        # Arreglo con los registros de ventas
+│   ├── analitica.js    # Funciones con ciclos, métodos y agrupaciones
+│   ├── explorar.js     # Script principal de auditoría y validación
+│   ├── verificar.js    # Comparación entre ciclos y métodos
+│   └── reporte.js      # Reporte ejecutivo por consola
 │
-├── bitacora.md         # Diario de proceso, problemas encontrados y decisiones
+├── bitacora-dia1.md    # Diario de proceso, problemas encontrados y decisiones
 └── README.md           # Manual y descripción general del proyecto
+```

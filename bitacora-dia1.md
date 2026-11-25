@@ -73,9 +73,9 @@ Para verificar la integridad de los datos en la columna `ciudad` y detectar erro
 
 ```javascript
 console.log(ventas.map(v => `[${v.ciudad}]`).join(" "));
+```
 
-
-#### `bitacora.md`
+#### `bitacora-dia1.md`
 ```markdown
 # Bitácora — Café Origen Analítica
 
@@ -150,3 +150,4 @@ Resultado manual para Medellín: `356000`, coincidente con `ventasPorCiudad(vent
 - **Prueba realizada:** ejecutar `node src/reporte.js` evaluando `"2026-09-10"`.
 - **Causa:** no validar `ventasValidas === 0` antes de realizar la división.
 - **Corrección:** retornar `0` explícitamente cuando `ventas.length === 0` o `ventasValidas === 0`.
+```
