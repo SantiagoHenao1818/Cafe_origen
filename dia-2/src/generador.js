@@ -17,7 +17,9 @@ const ciudades=[
 function generarVentas(n){
     if(!Number.isInteger(n) || n<1 ){
         throw new Error("N debe ser un entero positivo.");
+        return;
     }
+
     const ventas=[]
 
     const cantidadClientes= Math.max (1, Math.floor(n/3));
